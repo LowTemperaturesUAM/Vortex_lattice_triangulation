@@ -1,0 +1,58 @@
+function paintWithVoronoi(Values, Map, centros, trian, allow)
+
+
+ ValuesNew = round(255.*(Values(:,4)+1));  
+ 
+ color = jet(max(ValuesNew));
+  openFigure('DistanceMap')
+imshow(Map)
+hold on
+triplot(trian, centros(:,1), centros(:,2), 'w')
+hold on;plot(centros(:,1), centros(:,2), 'w.')
+
+for i=1:length(allow)
+    
+    vertices = surroundingPoints(allow(i), trian);
+    
+   Vertices = [centros(vertices,1) centros(vertices,2)];
+  
+    N = orderVertices(Vertices,centros();
+    
+    f = length(N);
+
+
+    patch('Faces', 1:f, 'Vertices', N', 'FaceColor', color(ValuesNew(i),:),'FaceAlpha',.8)
+   
+    
+    
+end
+
+ValuesNew = round(255.*(Values(:,5)+1));  
+ 
+ color = jet(max(ValuesNew));
+  openFigure('AngleMap')
+imshow(Map)
+hold on
+triplot(trian, centros(:,1), centros(:,2), 'w')
+plot(centros(:,1), centros(:,2), 'w.')
+
+for i=1:length(allow)
+    
+    vertices = surroundingPoints(allow(i), trian);
+    
+   Vertices = [centros(vertices,1) centros(vertices,2)];
+  
+    N = orderVertices(Vertices);
+    
+    f = length(N);
+
+
+    patch('Faces', 1:f, 'Vertices', N', 'FaceColor', color(ValuesNew(i),:),'FaceAlpha',.8)
+   
+    
+    
+end
+
+
+
+
