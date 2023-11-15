@@ -53,9 +53,9 @@ for i=1:Frame-1
     if sum(match) == length(fig.UserData.Frames.(Name).centrosc(:,1)) || ...
        sum(match) == length(fig.UserData.Frames.(Name1).centrosc(:,1) )
     'ihiañ'
-        check(i) = 0
+        check(i) = 0;
     else
-        check(i) = 1
+        check(i) = 1;
         'Disinto'
     end
         

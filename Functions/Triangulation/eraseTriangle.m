@@ -1,4 +1,9 @@
 %It erases the triangles you clicked.
+%Pd: no lo hace lol (bueno tiene truco)
+
+%Cuando borras un triangulo no se ve reflejado en la figura ya que los 
+%triangulos contiguos con los que comparte lados siguen existiendo. 
+%Para borrar una linea debes borrar todos los triangulos que la compartan 
 
 function [NewTriangulation unwanted] = eraseTriangle(center, Triangulation, centroids)
         unwanted =  [];

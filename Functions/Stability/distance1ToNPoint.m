@@ -1,5 +1,9 @@
 function distan = distance1ToNPoint(a,b)
 
+%Esto calcula las distancias entre un vortice y sus vecinos.
+% a son las coordenadas del punto desde el que calculas y b es una matriz
+% con las coordenadas de los vecinos (para nuestro programa)
+
 dimensions = length(a);
 [m,h]     = size(b);
 

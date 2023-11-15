@@ -13,7 +13,7 @@ else
     end
     [~, minimo] = min(distancia);
   
-    centroidsNew(minimo,:) = [0 0];
+    centroidsNew(minimo,:) = [ ]; %en principio esto funciona pero si no vuelve a poner [0 0] si no funciona
     newTrian = reTriangV2(centroidsNew, unwanted);
     
 end

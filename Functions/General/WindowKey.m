@@ -14,7 +14,7 @@
            end
            
            if strcmp(event.Key, 'rightarrow')
-               1
+               
                Frame = src.UserData.Frame;
                NFrames = src.UserData.NumberOfImages;
                

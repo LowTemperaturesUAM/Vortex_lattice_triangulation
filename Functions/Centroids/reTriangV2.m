@@ -12,7 +12,7 @@ for i = 1:size(unwanted,1)
 
     test = TRI  == unwanted(i,:);
     match = test(:,1).*test(:,2).*test(:,3);
-    toErase = nonzeros((1:length(match))'.*match)
+    toErase = nonzeros((1:length(match))'.*match);
     
      TRI(toErase,:) = [];
 

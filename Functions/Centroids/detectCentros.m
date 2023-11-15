@@ -18,7 +18,7 @@ BW2 = ismember(imageR,idx);
 imageR2=bwlabel(BW2,8);
 
 s2 = regionprops (imageR2, 'Centroid');
-centroids = cat(1, s2.Centroid)
+centroids = cat(1, s2.Centroid);
 imshow(MapO)
 hold on
 plot(centroids(:,1), centroids(:,2), 'wo');

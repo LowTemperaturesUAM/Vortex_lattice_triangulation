@@ -6,7 +6,7 @@
                trian = src.UserData.trian;   
 
     switch src.UserData.Mode
-        case {'c', 'f'}
+        case {'c', 'f'} %center and follow mode
        
                  
                if ~isfield(src.UserData, 'UnwantedTrian')

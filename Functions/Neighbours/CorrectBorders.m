@@ -7,6 +7,7 @@ function [allowed, forbidden] = CorrectBorders(centroids, centro, click, allowed
     end
       [~, minimo] = min(distancia);
 if strcmp(click, 'normal')
+    %Allowed son putos indices
    allowed = [allowed minimo];
    length(forbidden)
    for i =1:length(forbidden)

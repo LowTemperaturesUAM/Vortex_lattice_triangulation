@@ -4,7 +4,7 @@ function allow = allowCalculation(centrosc, allowed, forbidden, indice, X)
  a0 = 50;
  hold on
  h = 0;
- [Xmax, Ymax, ~] = size(X)
+ [Xmax, Ymax, ~] = size(X);
    for i=1:length(centrosc(:,1))
      
        if (((centrosc(i,1)>=indice*a0 && centrosc(i,2)>=indice*a0) && (centrosc(i,1)<=Ymax-indice*a0...

@@ -37,6 +37,8 @@ while 1
         break
         
     end
+
+    % No lo sé seguro pero creo que aqui se ha llorado sangre
     if Repeticiones ==10000
         break
     end
